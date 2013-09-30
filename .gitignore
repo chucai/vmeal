@@ -2,7 +2,6 @@
 /config/database.yml
 /config/environments/production.rb
 /config/initializers/session_store.rb
-/config/initializers/config.rb
 
 #Ingore db
 /db/development.sqlite3

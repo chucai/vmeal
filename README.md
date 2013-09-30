@@ -2,12 +2,6 @@ Vmeal
 =====================
 ***一个在线订餐平台，店家可以在这里开店，用户可以购买商品.***
 演示地址: www.weidaxue.me
-备注：代码由于是刚学rails的时候编写的，所以有很多地方可以重构，由于时间和精力有限，暂不会进行大面积的重构。
-
-###为什么开源###
-1. 创业项目失败。
-2. 代码是在学习rails的时候书写，很多参考了`web开发敏捷之道`一书,故回馈社区。
-3. 希望此系统能够维持下去，哪怕有一个人用，我们也会很开心，有兴趣的朋友可以一起讨论研究，学习进步。
 
 
 ###项目依赖###
@@ -18,17 +12,14 @@ Vmeal
 
 
 ###如何启动#####
-1. clone代码 `git clone git@github.com:dianrui/vmeal.git`
-2. 修改配置文件（database.yml）
-3. 执行bundle命令 `bundle `
-4. 启动redis
-5. 执行 `rake db:create`
-6. 执行 `rake db:schema:load`
-7. 执行 `rake db:seed`
-8. 执行 `rails s`
-
-然后访问 [http://localhost:3000/](http://localhost:3000/) ,如果不出意外，你将看到类似如下页面
-![首页图片](http://img.my.csdn.net/uploads/201309/30/1380475435_9672.png)
+*. clone代码 `git clone git@github.com:dianrui/vmeal.git`
+*. 修改配置文件（database.yml）
+*. 执行bundle命令 `bundle `
+*. 启动redis `redis-server`
+*. 执行 `rake db:create`
+*. 执行 `rake db:migrate`
+*. 执行 `rake db:seed`
+*. 执行 `rails s`
 
 ###有哪些功能#####
 
